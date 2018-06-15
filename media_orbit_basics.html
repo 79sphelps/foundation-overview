@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <title>Orbit Basics</title>
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/css/foundation.css">
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.5/css/app.css">
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.css">
+     </head>
+  
+     <body>
+            <div class = "orbit" role = "region" aria-label = "Space Images" data-orbit>
+                    <ul class = "orbit-container">
+                       <button class = "orbit-previous" aria-label = "previous">
+                          <span class = "show-for-sr">Previous Slide</span>◀
+                       </button>
+                       
+                       <button class = "orbit-next" aria-label = "next">
+                          <span class = "show-for-sr">Next Slide</span>▶
+                       </button>
+                       
+                       <li class = "is-active orbit-slide">
+                          <img class = "orbit-image" src = "./images/1.jpg" alt = "Milkyway">
+                          <figcaption class = "orbit-caption">Milkyway</figcaption>
+                       </li>
+                       
+                       <li class = "orbit-slide">
+                          <img class = "orbit-image" src = "./images/2.jpg" alt = "Satellite">
+                          <figcaption class = "orbit-caption">Satellite</figcaption>
+                       </li>
+                       
+                       <li class = "orbit-slide">
+                          <img class = "orbit-image" src = "./images/3.jpg" alt = "Rocket">
+                          <figcaption class = "orbit-caption">Rocket</figcaption>
+                       </li>
+                    
+                       <li class = "orbit-slide">
+                          <img class = "orbit-image" src = "./images/4.jpg" alt = "Moon">
+                          <figcaption class = "orbit-caption">Moon</figcaption>
+                       </li>
+                    </ul>
+                    
+                    <nav class = "orbit-bullets">
+                       <button class = "is-active" data-slide = "0">
+                          <span class = "show-for-sr">First slide.</span><span class = "show-for-sr">Current Slide</span>
+                       </button>
+                       
+                       <button data-slide = "1">
+                          <span class = "show-for-sr">Second slide.</span>
+                       </button>
+                       
+                       <button data-slide = "2">
+                          <span class = "show-for-sr">Third slide.</span>
+                       </button>
+                       
+                       <button data-slide = "3">
+                          <span class = "show-for-sr">Fourth slide.</span>
+                       </button>
+                    </nav>
+                 </div>
+            
+                 <div class = "orbit" role = "region" aria-label = "Favorite Space Pictures" data-orbit data-use-m-u-i = "false">
+                    <ul class = "orbit-container">
+                       <button class = "orbit-previous" aria-label = "previous">
+                          <span class = "show-for-sr">Previous Slide</span>◀
+                       </button>
+                       
+                       <button class = "orbit-next" aria-label = "next">
+                          <span class = "show-for-sr">Next Slide</span>▶
+                       </button>
+                          
+                       <li class = "is-active orbit-slide">
+                          <div>
+                             <h3 class = "text-center">Hi! Here is your first slider.</h3>
+                          </div>
+                       </li>
+                    
+                       <li class = "orbit-slide">
+                          <div>
+                             <h3 class = "text-center">Hi! Here is your second slider.</h3>
+                          </div>
+                       </li>
+                    
+                       <li class = "orbit-slide">
+                          <div>
+                             <h3 class = "text-center">Hi! Here is your third slider.</h3>
+                          </div>
+                       </li>
+                    
+                       <li class = "orbit-slide">
+                          <div>
+                             <h3 class = "text-center">Hi! Here is your fourth slider.</h3>
+                          </div>
+                       </li>
+                    </ul>
+                       
+                    <nav class = "orbit-bullets">
+                       <button class = "is-active" data-slide = "0">
+                          <span class = "show-for-sr">First slide.</span><span class = "show-for-sr">Current Slide</span>
+                       </button>
+                       
+                       <button data-slide = "1">
+                          <span class = "show-for-sr">Second slide.</span>
+                       </button>
+                       
+                       <button data-slide = "2">
+                          <span class = "show-for-sr">Third slide.</span>
+                       </button>
+                       
+                       <button data-slide = "3">
+                          <span class = "show-for-sr">Fourth slide.</span>
+                       </button>
+                    </nav>
+                 </div>
+  
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation/foundation.orbit.min.js"></script>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/jquery.min.js"></script>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/foundation.min.js"></script>
+           
+        <script>
+           $(document).ready(function() {
+              $(document).foundation();
+           })
+        </script>
+     </body>
+     
+  </html>

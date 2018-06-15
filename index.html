@@ -1,0 +1,2155 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/app.css">
+    <!--
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/css/foundation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.css" />
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/css/foundation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.5/css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.css">
+    
+</head>
+
+<body>
+  <h2>Foundation Overview</h2>
+
+  <div class="row">
+    https://www.tutorialspoint.com/foundation/index.htm
+    <br><br>
+    https://github.com/zurb/foundation-cli
+    <br><br>
+    https://cdnjs.com/libraries/foundation
+    <br><br>
+    https://cdnjs.com/libraries/foundation-essential
+    <br><br>
+    npm install -g foundation-cli
+    <br><br>
+    npm update -g foundation-cli
+    <br><br>
+    foundation -v
+    <br><br>
+    foundation new --framework sites --template basic ...project...
+  </div>  
+
+    <div class="row">
+        <h3>The Grid</h3>
+        <h4>Divided row in 2 columns</h4>
+        <div class="large-6 columns" style="background-color:#C0B0F0;">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </div>
+
+        <div class="large-6 columns" style="background-color:#8BD6EE;">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </div>
+    </div>
+    <hr>
+    
+    <div class="row">
+        <h4>Divided row in 3 columns</h4>
+        <div class="medium-4 columns" style="background-color:#8BD6EE;">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </div>
+
+        <div class="medium-4 columns" style="background-color:#C0B0F0;">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </div>
+
+        <div class="medium-4 columns" style="background-color:#8BD6EE;">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </div>
+    </div>
+    <hr>
+    
+    <div class="row">
+        <h4>Divided row in 4 columns</h4>
+        <div class="small-3 columns" style="background-color:#C0B0F0;">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </div>
+
+        <div class="small-3 columns" style="background-color:#8BD6EE;">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </div>
+
+        <div class="small-3 columns" style="background-color:#C0B0F0;">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </div>
+
+        <div class="small-3 columns" style="background-color:#8BD6EE;">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </div>
+    </div>
+
+    <hr>
+    <div class="row">
+      <h4>Example of combined column and row</h4>
+
+      <div class="column row" style="background-color:#8BD6EE;">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </div>
+    </div>
+
+    <hr>
+    <div class="row">
+        <h5>Grid - Nested Columns</h5>
+        <div class="small-9 columns" style="background-color:#8BD6EE;">
+            <h4>Main column small-9</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+            <div class="row">
+                <div class="small-6 columns" style="background-color:#808000;">
+                    Nested inside the small-9 class
+                </div>
+
+                <div class="small-6 columns" style="background-color:#FF6347;">
+                    Nested inside the small-9 class
+                </div>
+            </div>
+
+        </div>
+
+        <div class="small-3 columns" style="background-color:#808000;">Column small-3 class
+            <div class="row">
+                <div class="small-8 columns" style="background-color:#7B68EE;">
+                    Nested inside small-3 class
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <h4>Grid - Offsets</h4>
+
+        <div class="large-2 columns" style="background-color:#808000;">
+            Two column
+        </div>
+
+        <div class="large-10 columns" style="background-color:#7B68EE;">
+            10 columns
+        </div>
+  
+        <div class="large-2 columns" style="background-color:#8BD6EE;">
+            Two columns
+        </div>
+
+        <div class="large-8 small-offset-2 columns" style="background-color:#C0B0F0;">
+            8 column, offset 2 column
+        </div>
+ 
+        <div class="large-3 columns" style="background-color:#808000;">
+            3 columns
+        </div>
+
+        <div class="large-5 small-offset-4 columns" style="background-color:#8BD6EE;">
+            5 columns, offset 4 column
+        </div>
+  
+    </div>
+
+    <hr>
+    
+    <div class="row">
+        <h4>Incomplete rows example</h4>
+        <div class="small-4 columns" style="background-color:#808000;">
+            small-4 columns
+        </div>
+
+        <div class="small-4 columns" style="background-color:#8BD6EE;">
+            small-4 columns
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="small-4 columns" style="background-color:#8BD6EE;">
+            small-4 columns
+        </div>
+
+        <div class="small-4 columns end" style="background-color:#808000;">
+            small-4 columns end
+        </div>
+    </div>
+
+    <hr>
+    <h4>Centered Columns</h4>
+
+    <div class="row">
+        <div class="small-2 small-centered columns" style="background-color:#8BD6EE;">
+            Small centered
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="small-4 small-centered columns" style="background-color:#C0B0F0;">
+            Small centered
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="small-6 small-centered large-uncentered columns" style="background-color:#808000;">
+            Large uncentered
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="small-8 small-centered columns" style="background-color:#FF6347;">
+            Small centered
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="small-10 large-centered columns" style="background-color:#7B68EE;">
+            Large centered
+        </div>
+    </div>
+
+    <hr>
+
+    <h4>Source Ordering</h4>
+
+    <div class="row">
+        <div class="small-5 small-push-7 columns" style="background-color:#8BD6EE;">
+            Small push class
+        </div>
+
+        <div class="small-7 small-pull-5 columns" style="background-color:#C0B0F0;">
+            small pull class
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="large-2 large-push-10 columns" style="background-color:#808000;">
+            Large push class
+        </div>
+
+        <div class="large-10 large-pull-2 columns" style="background-color:#FF6347;">
+            Large pull class
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="medium-9 medium-push-3 columns" style="background-color:#C0B0F0;">
+            Medium push class
+        </div>
+
+        <div class="medium-3 medium-pull-9 columns" style="background-color:#8BD6EE;">
+            Medium pull class
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <h4>Block Grids</h4>
+
+      <div class="row small-up-2 medium-up-3 large-up-4">
+          <div class="column">
+              <img src="./images/1.jpg" class="thumbnail" alt="Block Grids">
+          </div>
+
+          <div class="column">
+              <img src="./images/1.jpg" class="thumbnail" alt="Block Grids">
+          </div>
+
+          <div class="column">
+              <img src="./images/1.jpg" class="thumbnail" alt="Block Grids">
+          </div>
+
+          <div class="column">
+              <img src="./images/1.jpg" class="thumbnail" alt="Block Grids">
+          </div>
+
+          <div class="column">
+              <img src="./images/1.jpg" class="thumbnail" alt="Block Grids">
+          </div>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <h4>Example of Flex Grid</h4>
+        <div class="small-4 columns" style="background-color:#8BD6EE;">Small 4</div>
+        <div class="small-4 columns" style="background-color:#FF6347;">Small 4</div>
+        <div class="small-4 columns" style="background-color:#8BD6EE;">Small 4</div>
+    </div>
+
+    <div class="row">
+        <div class="medium-6 large-9 columns" style="background-color:#C0B0F0;">
+            Medium 6/ Large 9
+        </div>
+
+        <div class="medium-6 large-3 columns" style="background-color:#7B68EE;">
+            Medium 6/ Large 3
+        </div>
+    </div>
+  
+
+    <hr>
+    <hr>
+    <h3>Example Form</h3>
+
+    <form>
+        <div class="row">
+            <div class="medium-6 columns">
+                <label>Input Text <input type = "text"></label>
+            </div>
+
+            <div class="medium-6 columns">
+                <label>Input search <input type = "search"></label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="medium-4 columns">
+                <label>Input time <input type = "time"></label>
+            </div>
+
+            <div class="medium-4 columns">
+                <label>Input Date <input type = "date"></label>
+            </div>
+
+            <div class="medium-4 columns">
+                <label>Datetime <input type = "datetime-local"></label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="medium-4 columns">
+                <label>Number <input type = "number"></label>
+            </div>
+
+            <div class="medium-4 columns">
+                <label>Telephone <input type = "tel"></label>
+            </div>
+
+            <div class="medium-4 columns">
+                <label>Month <input type = "month"></label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="medium-6 columns">
+                <label>Input url <input type = "url"></label>
+            </div>
+
+            <div class="medium-6 columns">
+                <label>Input week <input type = "week"></label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="medium-6 columns">
+                <label>Email<input type = "email"></label>
+            </div>
+
+            <div class="medium-6 columns">
+                <label>Password <input type = "password"></label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="medium-12 columns">
+                <label>Textarea 
+                 <textarea>Hi .. This is from textarea.....s</textarea>
+              </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="medium-12 columns">
+                Select your car:
+                <select>
+                <option value = "Rolls-Royce Wraith">Rolls-Royce Wraith</option>
+                <option value = " Lamborghini Huracan"> Lamborghini Huracan</option>
+                <option value = "Bentley Flying Spur">Bentley Flying Spur</option>
+                <option value = "Porsche 911 Turbo S">Porsche 911 Turbo S</option>
+            </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <fieldset class="medium-12 columns">
+                <legend>Select your vehicle</legend>
+
+                <input type="radio" name="vehicle" value="XUV" id="vehicleXUV" required>
+                <label for="vehicleXUV">XUV</label>
+
+                <input type="radio" name="vehicle" value="XYLO" id="vehicleXYLO">
+                <label for="vehicleXYLO">XYLO</label>
+
+                <input type="radio" name="vehicle" value="SCORPIO" id="vehicleSCORPIO">
+                <label for="vehicleSCORPIO">SCORPIO</label>
+            </fieldset>
+        </div>
+
+        <div class="row">
+            <fieldset class="medium-12 columns">
+                <legend>Choose your favourite company</legend>
+
+                <input id="audi" type="checkbox">
+                <label for="audi">Audi</label>
+
+                <input id="mahindra" type="checkbox">
+                <label for="mahindra">Mahindra</label>
+
+                <input id="benz" type="checkbox">
+                <label for="benz">Benz</label>
+            </fieldset>
+        </div>
+
+        <fieldset class="fieldset">
+            <legend>Select your favourite sport.</legend>
+
+            <input id="football" type="checkbox">
+            <label for="football">Football</label>
+
+            <input id="cricket" type="checkbox">
+            <label for="cricket">Cricket</label>
+
+            <input id="baseball" type="checkbox">
+            <label for="baseball">Baseball</label>
+
+            <input id="basketball" type="checkbox">
+            <label for="basketball">Basketball</label>
+        </fieldset>
+    </form>
+
+    <hr>
+    <hr>
+    <h3>Visibility by Screen Size</h3>
+
+    <p class="show-for-small">This line appears on small or medium screen.</p>
+    <p class="show-for-medium">This line appears on medium screen or larger.</p>
+    <p class="show-for-large">This line appears on large screen or larger.</p>
+
+    <p class="hide-for-small">This line disappears on small or medium screen.</p>
+    <p class="hide-for-medium">This line disappears on medium screen or larger.</p>
+    <p class="hide-for-large">This line disappears on large screen or larger.</p>
+
+    <hr>
+    <hr>
+    <h3>Typography</h3>
+
+    <h4>Base Typography Paragraphs Example</h4>
+    <p>A Framework for any device, medium, and accessibility. <strong>
+     Foundation</strong> is a family of responsive front-end frameworks that make it easy to design beautiful responsive websites, apps and emails that look amazing on any device. <i>Foundation</i> is semantic, readable, flexible, and completely customizable.</p>
+
+    <p> Foundation for Sites provides you with HTML, CSS, & JavaScript to help you quickly prototype. It's easy to customize & extend to get your project polished & shipped.</p>
+
+    <hr>
+
+    <h4>Base Typography Dividers Example</h4>
+    
+    <section>
+        <h4>Foundation</h4>
+        <p>Foundation is a family of responsive front-end frameworks that make it easy to design beautiful responsive websites.</p>
+    </section>
+    <hr>
+
+    <section>
+        <h4>Bootstrap</h4>
+        <p>Bootstrap is a sleek, intuitive, and powerful, mobile first front-end framework for faster and easier web development.</p>
+    </section>
+
+    <hr>
+
+    <blockquote>
+        A Foundation is a family of responsive front-end frameworks that make it easy to design beautiful responsive websites, apps and emails that look amazing on any device.
+        <cite>Maintained by ZURB</cite>
+    </blockquote>
+
+    <hr>
+
+    <h4>Example of Abbreviations</h4>
+
+    <blockquote>
+        <p><abbr title="Hyper Text Markup Language">HTML</abbr> which is the most widely used language on Web to develop web pages.</p>
+    </blockquote>
+
+    <h4>Example of Code</h4>
+    <p>You can use break between the sections by using<code>this is code</code> tag.</p>
+
+    <hr>
+
+    <h4>Base Typography Keystrokes Example</h4>
+    <p>Use <kbd>ctrl + esc</kbd> to open the start menu.</p>
+
+    <hr>
+    <hr>
+    <h3>Typography Helpers</h3>
+
+    <h4>Text Alignment</h4>
+    <p class="text-left">Foundation is one of the advanced front-end framework for designing beautiful responsive websites. It works on all types of devices and provides you with HTML, CSS and JavaScript plugins.</p>
+
+    <p class="text-right">Foundation is one of the advanced front-end framework for designing beautiful responsive websites. It works on all types of devices and provides you with HTML, CSS and JavaScript plugins.</p>
+
+    <p class="text-center">Foundation is one of the advanced front-end framework for designing beautiful responsive websites. It works on all types of devices and provides you with HTML, CSS and JavaScript plugins.</p>
+
+    <p class="text-justify">Foundation is one of the advanced front-end framework for designing beautiful responsive websites. It works on all types of devices and provides you with HTML, CSS and JavaScript plugins.</p>
+
+    <p class="medium-text-center">Foundation is one of the advanced front-end framework for designing beautiful responsive websites. It works on all types of devices and provides you with HTML, CSS and JavaScript plugins.</p>
+
+    <hr>
+
+    <h4>Subheader</h4>
+    <h1 class="subheader">This is heading one</h1>
+    <h3 class="subheader">This is heading two</h3>
+    <h3 class="subheader">This is heading three</h3>
+    <h4 class="subheader">This is heading four</h4>
+    <h5 class="subheader">This is heading five</h5>
+    <h6 class="subheader">This is heading six</h6>
+
+    <hr>
+    <h4>Lead Paragraph</h4>
+
+    <p class="lead">This is the paragraph with <em>lead</em> class. Foundation is one of the advanced front-end framework for designing beautiful responsive websites. It works on all types of devices and provides you with HTML, CSS and JavaScript plugins.
+    </p>
+
+    <p>This is the normal paragraph. Foundation is one of the advanced front-end framework for designing beautiful responsive websites. It works on all types of devices and provides you with HTML, CSS and JavaScript plugins.</p>
+
+    <hr>
+
+    <p>List with <i>no-bullet</i> class.</p>
+    <ul class="no-bullet">
+        <li>List item 1</li>
+        <li>List item 2
+            <ul>
+                <li>Nested list item 1</li>
+                <li>Nested list item 2</li>
+                <li>Nested list item 3</li>
+            </ul>
+        </li>
+        <li>List item 3</li>
+    </ul>
+
+    <p>List without <i>no-bullet</i> class.</p>
+    <ul>
+        <li>List item 1</li>
+        <li>List item 2
+            <ul>
+                <li>Nested list item 1</li>
+                <li>Nested list item 2</li>
+                <li>Nested list item 3</li>
+            </ul>
+        </li>
+        <li>List item 3</li>
+    </ul>
+
+    <hr>
+
+    <p>Number of online users</p>
+    <div class="stat">7080</div>
+
+    <hr>
+    <hr>
+    <h3>Basic Controls</h3>
+
+    <h4>Button Controls</h4>
+
+    <a href="contact.html" class="button">Contact Us</a>
+    <a href="#gallery" class="button">Gallery</a>
+
+    <button type="button" class="success button">Success</button>
+    <button type="button" class="alert button">Alert</button>
+
+    <a class="tiny button" href="#">Tiny button</a>
+    <a class="small button" href="#">Small button</a>
+    <a class="button" href="#">Button</a>
+    <a class="large button" href="#">Large button</a>
+    <a class="expanded button" href="#">Expanded button</a>
+    <a class="small expanded button" href="#">Small expanded button</a>
+
+    <a class="secondary button" href="#">Secondary</a>
+
+    <button type="button" class="success button">Success</button>
+    <button type="button" class="alert button">Alert</button>
+
+    <a class="warning button" href="#">Warning</a>
+    <a class="disabled button" href="#">Disabled</a>
+    <button type="button" class="disabled button">Disabled</button>
+
+    <button class="hollow button" href="#">Primary</button>
+    <button class="secondary hollow button" href="#">Secondary</button>
+    <button class="success hollow button" href="#">Success</button>
+    <button class="alert hollow button" href="#">Alert</button>
+    <button class="warning hollow button" href="#">Warning</button>
+
+    <button class="tiny dropdown button">Tiny Dropdown</button>
+    <button class="small dropdown button">Small Dropdown</button>
+    <button class="dropdown button">Dropdown</button>
+    <button class="large dropdown button">Large Dropdown</button>
+    <button class="expanded dropdown button">Expanded Dropdown</button>
+
+    <p>When he reached
+        <button class="button" type="button">
+           <span class = "show-for-sr">home</span>
+           <!-- Screen readers will see "home" but Visual users will see the home icon, but not the "home" text -->
+           <span aria-hidden = "true"><i class = "fi-home"></i></span>
+        </button> the children were playing.
+    </p>
+
+    <p>Copy and paste the above sentence to see what it is.</p>
+
+    <hr>
+
+    <h4>Button Group</h4>    
+
+    <div class = "button-group">
+        <a class = "button">First button</a>
+        <a class = "button">Second button</a>
+        <a class = "button">Third button</a>
+    </div>
+
+    <div class = "small button-group">
+        <a class = "button">Small Button</a>
+        <a class = "button">Small Button</a>
+        <a class = "button">Small Button</a>
+    </div>
+
+    <div class = "button-group">
+        <a class = "secondary button">Secondary</a>
+        <a class = "success button">Success</a>
+        <a class = "warning button">Warning</a>
+        <a class = "alert button">Alert</a>
+    </div>
+
+    <div class = "success button-group">
+        <a class = "button">Button</a>
+        <a class = "button">With</a>
+        <a class = "button">Success</a>
+        <a class = "button">Class</a>
+    </div>
+
+    <div class = "expanded button-group">
+        <a class = "button">One</a>
+        <a class = "button">Two</a>
+        <a class = "button">Three</a>
+        <a class = "button">Four</a>
+        <a class = "button">Five</a>
+        <a class = "button">Six</a>
+    </div>
+     
+     <div class = "expanded button-group">
+        <a class = "button">One</a>
+        <a class = "button">Two</a>
+        <a class = "button">Three</a>
+        <a class = "button">Four</a>
+        <a class = "button">Five</a>
+        <a class = "button">Six</a>
+        <a class = "button">Seven</a>
+    </div>
+
+    <div class = "stacked button-group">
+        <a class = "button">One</a>
+        <a class = "button">Two</a>
+        <a class = "button">Three</a>
+        <a class = "button">Four</a>
+        <a class = "button">Five</a>
+        <a class = "button">Six</a>
+    </div>
+
+    <div class = "button-group">
+        <a class = "button">Shut Down</a>
+        <a class = "dropdown button arrow-only"><span class = "show-for-sr">Show options</span></a>
+    </div>
+
+
+    <div class = "callout">
+        <button class = "close-button" aria-label = "Close alert" type = "button">
+           <span aria-hidden = "true">×</span>
+        </button>
+        <p>This is an example of close button!</p>
+    </div>    
+
+    <hr><hr>
+    <h3>Sliders</h3>
+
+    <div class = "slider" data-slider data-initial-start = "70" data-end = "100">
+        <span class = "slider-handle"  data-slider-handle role = "slider" tabindex = "1"></span>
+        <span class = "slider-fill" data-slider-fill></span>
+        <input type = "hidden">
+    </div>
+
+    <div class = "slider vertical" data-slider data-initial-start = "25" data-end = "100" data-vertical = "true">
+        <span class = "slider-handle" data-slider-handle role = "slider" tabindex = "1"></span>
+        <span class = "slider-fill" data-slider-fill></span>
+        <input type = "hidden">
+    </div>
+
+    <div class = "slider disabled" data-slider data-initial-start = "45">
+        <span class = "slider-handle" data-slider-handle role = "slider" tabindex = "1"></span>
+        <span class = "slider-fill" data-slider-fill></span>
+        <input type = "hidden">
+    </div>
+
+    <div class = "slider" data-slider data-initial-start = "30" data-initial-end = "60">
+        <span class = "slider-handle" data-slider-handle role = "slider" tabindex = "1"></span>
+        <span class = "slider-fill" data-slider-fill></span>
+        <span class = "slider-handle" data-slider-handle role = "slider" tabindex = "1"></span>
+        <input type = "hidden">
+        <input type = "hidden">
+    </div>
+
+    <div class = "small-10 columns">
+        <div class = "slider" data-slider data-initial-start = "30">
+           <span class = "slider-handle"  data-slider-handle role = "slider" tabindex = "1" aria-controls = "sliderOutput"></span>
+           <span class = "slider-fill" data-slider-fill></span>
+        </div>
+    </div>
+     
+    <div class = "small-2 columns">
+        <input type = "number" id = "sliderOutput">
+    </div>
+
+    <hr>
+    <hr>
+    <h3>Switches</h3>
+
+    <div class = "switch">
+        <input class = "switch-input" id = "demoSwitch" type = "checkbox" name = "demoSwitch">
+        <label class = "switch-paddle" for = "demoSwitch">
+           <span class = "show-for-sr">Switch</span>
+        </label>
+    </div>
+
+    <div>
+        <div class = "switch">
+           <input class = "switch-input" id = "exampleRadioSwitch1" type = "radio" checked name = "testGroup">
+           <label class = "switch-paddle" for = "exampleRadioSwitch1">
+              <span class = "show-for-sr">Radio Switch 1</span>
+           </label>
+        </div>
+        
+        <div class = "switch">
+           <input class = "switch-input" id = "exampleRadioSwitch2" type = "radio" checked name = "testGroup">
+           <label class = "switch-paddle" for = "exampleRadioSwitch2">
+              <span class = "show-for-sr">Radio Switch 2</span>
+           </label>
+        </div>
+        
+        <div class = "switch">
+           <input class = "switch-input" id = "exampleRadioSwitch3" type = "radio" checked name = "testGroup">
+           <label class = "switch-paddle" for = "exampleRadioSwitch3">
+              <span class = "show-for-sr">Radio Switch 3</span>
+           </label>
+        </div>
+    </div>
+
+
+    <div class = "switch tiny">
+        <input class = "switch-input" id = "tinySwitch" type = "checkbox" name = "demoSwitch">
+        <label class = "switch-paddle" for = "tinySwitch">
+           <span class = "show-for-sr">Tiny Switch</span>
+        </label>
+    </div>
+
+    <div class = "switch small">
+        <input class = "switch-input" id = "smallSwitch" type = "checkbox" name = "demoSwitch">
+        <label class = "switch-paddle" for = "smallSwitch">
+           <span class = "show-for-sr">Small Switch</span>
+        </label>
+    </div>
+
+    <div class = "switch large">
+        <input class = "switch-input" id = "largeSwitch" type = "checkbox" name = "demoSwitch">
+        <label class = "switch-paddle" for = "largeSwitch">
+           <span class = "show-for-sr">Large Switch</span>
+        </label>
+    </div>
+
+    <p>Would you like to follow us?</p>
+      
+    <div class = "switch large">
+       <input class = "switch-input" id = "inner_label" type = "checkbox" name = "demoSwitch">
+       <label class = "switch-paddle" for = "inner_label">
+          <span class = "show-for-sr">Would you like to follow us?</span>
+          <span class = "switch-active" aria-hidden = "true">Yes</span>
+          <span class = "switch-inactive" aria-hidden = "true">No</span>
+       </label>
+    </div>
+
+    <hr>
+    <hr>
+    <h3>Dropdown Menus</h3>
+
+    <h4>Example of Horizontal Dropdown menu</h4>
+    <ul class="menu dropdown" data-dropdown-menu>
+        <li><a href="#">Home</a>
+            <ul class="menu">
+                <li><a href="#">Home 1</a></li>
+                <li><a href="#">Home 2</a></li>
+                <li><a href="#">Home 3</a>
+                    <ul class="menu">
+                        <li><a href="#">Home3 1</a></li>
+                        <li><a href="#">Home3 2</a></li>
+                        <li><a href="#">Home3 3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <hr>
+
+    <h4>Example of Vertical Dropdown menu</h4>
+    <ul class="vertical dropdown menu" data-dropdown-menu>
+        <li><a href="#">Home</a>
+            <ul class="menu">
+                <li><a href="#">Home 1</a></li>
+                <li><a href="#">Home 2</a>
+                    <ul class="menu">
+                        <li><a href="#">Home2 1</a></li>
+                        <li><a href="#">Home2 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <hr>
+
+    <h4>Example of Drilldown menu</h4>
+
+    <ul class="vertical menu" data-drilldown>
+        <li><a href="#">Home</a>
+            <ul class="vertical menu">
+                <li><a href="#">Home 1</a></li>
+                <li><a href="#">Home 2</a>
+                    <ul class="vertical menu">
+                        <li><a href="#">Home2 1</a></li>
+                        <li><a href="#">Home2 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <hr>
+
+    <h4>Accordion Menu Example</h4>
+
+    <ul class="vertical menu" data-accordion-menu>
+        <li><a href="#">Two Wheeler</a>
+            <ul class="menu vertical nested is-active">
+                <li><a href="#">Honda</a>
+                    <ul class="menu vertical nested">
+                        <li><a href="#">CB Shine</a></li>
+                        <li><a href="#">Unicorn</a></li>
+                        <li><a href="#">Dream Yuga</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">TVS</a></li>
+                <li><a href="#">Bajaj</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#">Four Wheeler</a>
+            <ul class="menu vertical nested">
+                <li><a href="#">Mahindra</a></li>
+                <li><a href="#">Ford</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Heavy Weight Vehicle</a></li>
+    </ul>
+
+    <hr>
+
+    <h4>Top Bar Example</h4>
+      
+    <div class = "top-bar">
+       <div class = "top-bar-left">
+          <ul class = "dropdown menu" data-dropdown-menu>
+             <li class = "menu-text">Foundation</li>
+             <li><a href = "#">Home</a></li>
+             <li><a href = "#">About Us</a></li>
+             
+             <li class = "has-submenu">
+                <a href = "#">Services</a>
+                <ul class = "submenu menu vertical" data-submenu>
+                   <li><a href = "#">Service1</a></li>
+                   <li><a href = "#">Service2</a></li>
+                   <li><a href = "#">Service3</a></li>
+                </ul>
+             </li>
+             
+             <li><a href = "#">Contact Us</a></li>
+          </ul>
+       </div>
+       
+       <div class = "top-bar-right">
+          <ul class = "menu">
+             <li><input type = "search" placeholder = "Search Here"></li>
+             <li><button type = "button" class = "button">Search</button></li>
+          </ul>
+       </div>
+    </div>
+
+    <hr>
+
+    <h4> Example of Responsive Navigation menu</h4>
+
+    <ul class="menu dropdown" data-responsive-menu="drilldown medium-dropdown">
+        <li><a href="#">Bike</a>
+            <ul class="menu">
+                <li><a href="#">Bajaj</a></li>
+                <li><a href="#">Suzuki</a  ></li>
+             <li><a href = "#">Honda</a>
+                    <ul class="menu">
+                        <li><a href="#">Activa</a></li>
+                        <li><a href="#">Dio</a></li>
+                        <li><a href="#">Passion</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">Car</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <hr>
+
+    <h4> Example of Responsive Navigation Toggle</h4>
+    <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle></button>
+        <div class="title-bar-title">Menu</div>
+    </div>
+
+    <div id="example-menu">
+        <ul class="menu dropdown" data-dropdown-menu>
+            <li><a href="#">Bike</a>
+                <ul class="menu">
+                    <li><a href="#">Bajaj</a></li>
+                    <li><a href="#">Suzuki</a></li>
+                    <li><a href="#">Honda</a>
+                        <ul class="menu">
+                            <li><a href="#">Activa</a></li>
+                            <li><a href="#">Dio</a></li>
+                            <li><a href="#">Passion</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Car</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <h3>Example of Magellan Setup (scroll to section)</h3>
+      
+    <ul class = "horizontal menu" data-magellan>
+       <li><a href = "#home">Home</a></li>
+       <li><a href = "#about">About Us</a></li>
+       <li><a href = "#service">Service</a></li>
+    </ul>
+    
+    <div class = "sections">
+       <section id = "home">
+          <h3>Home</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+          when an unknown printer took a galley of type and scrambled it to make a type 
+          specimen book.</p>
+          
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+          when an unknown printer took a galley of type and scrambled it to make a type 
+          specimen book.</p>
+          
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+          when an unknown printer took a galley of type and scrambled it to make a type 
+          specimen book.</p>
+          
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+          when an unknown printer took a galley of type and scrambled it to make a type 
+          specimen book.</p>
+       </section>
+       
+       <section id = "about">
+          <h3>About</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+          when an unknown printer took a galley of type and scrambled it to make a type 
+          specimen book.</p>
+          
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+          when an unknown printer took a galley of type and scrambled it to make a type 
+          specimen book.</p>
+          
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+          when an unknown printer took a galley of type and scrambled it to make a type 
+          specimen book.</p>
+          
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+          when an unknown printer took a galley of type and scrambled it to make a type 
+          specimen book.</p>
+       </section>
+       
+       <section id = "service">
+          <h3>Service</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+          when an unknown printer took a galley of type and scrambled it to make a type 
+          specimen book.</p>
+          
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+          when an unknown printer took a galley of type and scrambled it to make a type 
+          specimen book.</p>
+          
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+          when an unknown printer took a galley of type and scrambled it to make a type 
+          specimen book.</p>
+       </section>
+    </div>
+
+    <hr>
+
+    <h4>Sticky Navigation</h4>
+
+    <div data-magellan-expedition = "fixed">
+        <section class = "top-bar-section">
+           <div class = "sticky-mag">
+              <ul class = "horizontal menu" data-magellan>
+                 <li data-magellan-arrival = "home"><a href = "#home2">Home</a></li>
+                 <li data-magellan-arrival = "about"><a href = "#about2">About</a></li>
+                 <li data-magellan-arrival = "service"><a href = "#service2">Service</a></li>
+              </ul>
+           </div>
+        </section>
+    </div>
+    <br/>
+    <br/>
+
+    <h4 data-magellan-destination = "home">Home</h4>
+     <a name = "home"></a>
+     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+     when an unknown printer took a galley of type and scrambled it to make a type 
+     specimen book.</p>
+     
+     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+     when an unknown printer took a galley of type and scrambled it to make a type 
+     specimen book.</p>
+
+     <h4 data-magellan-destination = "about">About</h4>
+     <a name = "about"></a>
+     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+     when an unknown printer took a galley of type and scrambled it to make a type 
+     specimen book.</p>
+     
+     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+     when an unknown printer took a galley of type and scrambled it to make a type 
+     specimen book.</p>
+
+     <h4 data-magellan-destination = "service">Service</h4>
+     <a name = "service"></a>
+     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+     when an unknown printer took a galley of type and scrambled it to make a type 
+     specimen book.</p>
+     
+     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+     when an unknown printer took a galley of type and scrambled it to make a type 
+     specimen book.</p>
+
+    <hr>
+
+    <h3>Pagination</h3>
+    
+    <h4>Pagination Example</h4>
+      
+    <ul class = "pagination">
+       <li class = "disabled">Previous</li>
+       <li class = "current">1</li>
+       <li><a href = "#">2</a></li>
+       <li><a href = "#">3</a></li>
+       <li><a href = "#">4</a></li>
+       <li class = "ellipsis"></li>
+       <li><a href = "#">12</a></li>
+       <li><a href = "#">13</a></li>
+       <li><a href = "#">Next</a></li>
+    </ul>
+
+    <h4>Pagination Centered Example</h4>
+    <ul class = "pagination text-center">
+       <li class = "disabled">Previous</li>
+       <li class = "current">1</li>
+       <li><a href = "#">2</a></li>
+       <li><a href = "#">3</a></li>
+       <li><a href = "#">4</a></li>
+       <li class = "ellipsis"></li>
+       <li><a href = "#">12</a></li>
+       <li><a href = "#">13</a></li>
+       <li><a href = "#">Next</a></li>
+    </ul>
+
+    <hr>
+
+    <h3>Breadcrumbs Example</h3>
+      
+    <ul class = "breadcrumbs">
+        <li><a href = "#">Home</a></li>
+        <li><a href = "#">About Us</a></li>
+        <li class = "disabled">Services</li>
+        <li>
+          <span class = "show-for-sr">Contact: </span> Contact Us
+        </li>
+    </ul>
+
+    <hr>
+    <hr>
+    <h3>Containers</h3>
+
+    <h4>Basic Accordion Example</h4>
+    <ul class="accordion" data-accordion role="tablist">
+        <li class="accordion-item is-active">
+            <a href="#collapse1" role="tab" class="accordion-title" id="collapse1-heading">Foundation</a>
+            <div id="collapse1" class="accordion-content" role="tabpanel" data-tab-content aria-labelledby="panel1d-heading">
+                The most advanced responsive front-end framework.
+            </div>
+        </li>
+
+        <li class="accordion-item">
+            <a href="#collapse2" role="tab" class="accordion-title" id="collapse2-heading">Bootstrap</a>
+            <div id="collapse2" class="accordion-content" role="tabpanel" data-tab-content aria-labelledby="panel1d-heading">
+                Bootstrap is the most popular and powerful front-end framework.
+            </div>
+        </li>
+
+        <li class="accordion-item">
+            <a href="#collapse3" role="tab" class="accordion-title" id="collapse3-heading">HTML</a>
+            <div id="collapse3" class="accordion-content" role="tabpanel" data-tab-content aria-labelledby="panel1d-heading">
+                HTML is a markup language for describing web documents.
+            </div>
+        </li>
+    </ul>
+
+    <hr>
+    <hr>
+
+    <h3>Basic Callout Example</h3>
+
+    <div class="callout">
+        <h5>This is basic callout</h5>
+        <a href="#">Foundation is a responsive front-end framework.</a>
+    </div>
+
+    <h4>Coloring Callout Example</h4>
+    <div class="callout secondary">
+        <h5>secondary callout</h5>
+        <a href="#">Foundation is a responsive front-end framework.</a>
+    </div>
+
+    <div class="callout success">
+        <h5>success callout</h5>
+        <a href="#">Foundation is a responsive front-end framework.</a>
+    </div>
+
+    <div class="callout warning">
+        <h5>warning callout</h5>
+        <a href="#">Foundation is a responsive front-end framework.</a>
+    </div>
+
+    <div class="callout alert">
+        <h5>alert callout</h5>
+        <a href="#">Foundation is a responsive front-end framework.</a>
+    </div>
+
+    <div class="callout primary">
+        <h5>primary callout</h5>
+        <a href="#">Foundation is a responsive front-end framework.</a>
+    </div>
+
+    <h4>Sizing Callout Example</h4>
+    <div class="callout small">
+        <h5>This is small callout</h5>
+        <a href="#">Foundation is a responsive front-end framework.</a>
+    </div>
+
+    <div class="callout large">
+        <h5>This is large callout</h5>
+        <a href="#">Foundation is a responsive front-end framework.</a>
+    </div>
+
+    <h4>Closable Callout Example</h4>
+    <div class="alert callout" data-closable>
+        <h5>This is Closable Callout</h5>
+        <p>Foundation is a responsive front-end framework.</p>
+        <button class="close-button" data-close aria-label="Dismiss alert">×</button>
+    </div>
+
+    <hr>
+    <hr>
+
+    <h3>Dropdown Pane Example</h3>
+    <button class="button" type=" button" data-toggle="dropdown_toggle">Basic Dropdown Pane</button>
+
+    <div class="dropdown-pane" id="dropdown_toggle" data-dropdown>
+        Foundation is a responsive front-end framework.
+    </div>
+    <button class="button" type="button" data-toggle="dropdown_toggle1">
+         Hoverable Dropdown Pane
+      </button>
+
+    <div class="dropdown-pane" id="dropdown_toggle1" data-dropdown data-hover="true">
+        Foundation is a responsive front-end framework.
+    </div>
+
+    <hr>
+
+    <h3>Dropdown Pane Positioning Example</h3>
+
+    <button class="button" type="button" data-toggle="dropdown_toggle">Right</button>
+    <div class="dropdown-pane right" id="dropdown_toggle" data-dropdown>
+        Foundation is a responsive front-end framework.
+    </div>
+
+    <button class="button" type="button" data-toggle="dropdown_toggle1">Bottom</button>
+    <div class="dropdown-pane bottom" id="dropdown_toggle1" data-dropdown>
+        Foundation is a responsive front-end framework.
+    </div><br><br><br>
+
+    <button class="button" type="button" data-toggle="dropdown_toggle2">Top</button>
+    <div class="dropdown-pane top" id="dropdown_toggle2" data-dropdown>
+        Foundation is a responsive front-end framework.
+    </div>
+
+    <button class="button" style="float:right" type="button" data-toggle="dropdown_toggle3">Left</button>
+    <div class="dropdown-pane left" id="dropdown_toggle3" data-dropdown>
+        Foundation is a responsive front-end framework.
+    </div>
+
+    <hr>
+    <hr>
+    <h3>Media Objects</h3>
+
+    <h3>Basic Media Object Example</h3>
+    <div class="media-object">
+        <div class="media-object-section middle">
+            <div class="thumbnail">
+                <img src="./images/1.jpg" alt="Media Object">
+            </div>
+        </div>
+
+        <div class="media-object-section">
+            <h4>Foundation</h4>
+            <p>Foundation is a family of responsive front-end frameworks that make it easy to design beautiful responsive websites, apps and emails that look amazing on any device.</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <h3>Media Object Section Alignment Example</h3>
+
+    <div class="media-object">
+        <div class="media-object-section middle">
+            <div class="thumbnail">
+                <img src="./images/1.jpg" alt="Section Alignment">
+            </div>
+        </div>
+
+        <div class="media-object-section">
+            <h4>Foundation</h4>
+            <p>Foundation is a family of responsive front-end frameworks that make it easy to design beautiful responsive websites, apps and emails that look amazing on any device.</p>
+
+            <p>Foundation is semantic, readable, flexible, and completely customizable. Foundation for Sites is jam-packed with features to help people rapidly build content-focused websites.</p>
+        </div>
+
+        <div class="media-object-section bottom">
+            <div class="thumbnail">
+                <img src="./images/1.jpg" alt="Section Alignment">
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <h3>Media Object Stack on Small Example</h3>
+    <div class="media-object stack-for-small">
+        <div class="media-object-section">
+            <div class="thumbnail">
+                <img src="./images/1.jpg">
+            </div>
+        </div>
+
+        <div class="media-object-section">
+            <h4>Foundation</h4>
+            <p>Foundation is a family of responsive front-end frameworks that make it easy to design beautiful responsive websites, apps and emails that look amazing on any device.</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <h3>Nesting Media Objects Example</h3>
+
+    <div class="media-object">
+        <div class="media-object-section">
+            <div class="thumbnail">
+                <img src="./images/1.jpg" alt="Nesting Media Objects">
+            </div>
+        </div>
+
+        <div class="media-object-section">
+            <h4>Foundation</h4>
+            <p>Foundation is a family of responsive front-end frameworks that make it easy to design beautiful responsive websites, apps and emails that look amazing on any device.</p>
+
+            <div class="media-object">
+                <div class="media-object-section">
+                    <div class="thumbnail">
+                        <img src="./images/1.jpg" alt="Nesting Media Objects">
+                    </div>
+                </div>
+
+                <div class="media-object-section">
+                    <h4>Foundation</h4>
+                    <p>Foundation is a family of responsive front-end frameworks that make it easy to design beautiful responsive websites, apps and emails that look amazing on any device.</p>
+
+                    <div class="media-object">
+                        <div class="media-object-section">
+                            <div class="thumbnail">
+                                <img src="./images/1.jpg" alt="Nesting Media Objects">
+                            </div>
+                        </div>
+
+                        <div class="media-object-section">
+                            <h4>Foundation</h4>
+                            <p>Foundation is a family of responsive front-end frameworks that make it easy to design beautiful responsive websites, apps and emails that look amazing on any device.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <hr>
+
+    <div class="off-canvas-wrapper">
+        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+            <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-position="left">
+                Welcome to Foundation
+            </div>
+
+            <div class="off-canvas-content" data-off-canvas-content>
+                <button type="button" class="button" data-toggle="offCanvas">Click here to open content</button>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <h3>Off-canvas Multiple Menus Example</h3>
+    <div class="off-canvas-wrapper">
+        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+            <div class="off-canvas position-left" id="off_canvas_left1" data-off-canvas></div>
+            <div class="off-canvas position-right" id="off_canvas_right1" data-off-canvas data-position="right"></div>
+
+            <div class="off-canvas-content" data-off-canvas-content>
+                <p style="text-align:center;">Welcome to Foundation</p>
+            </div>
+            <button type="button" style="display:block; margin: 0 auto;" class="button" data-toggle="off_canvas_left1">Click here to move left</button><br>
+            <button type="button" style="display:block; margin: 0 auto;" class="button" data-toggle="off_canvas_right1">Click here to move right</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <h3>Off-canvas Title Bar Example</h3>
+
+    <div class="off-canvas-wrapper">
+        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+            <div class="off-canvas position-right" id="off_canvas_right2" data-off-canvas data-position="right">
+                Right side content
+            </div>
+
+            <div class="off-canvas position-left" id="off_canvas_left2" data-off-canvas data-position="left">
+                Left side content
+            </div>
+
+            <div class="main-content" data-off-canvas-content>
+                <div class="title-bar">
+
+                    <div class="title-bar-left">
+                        <button class="menu-icon" type="button" data-open="off_canvas_right2"></button>
+                        <span class="title-bar-title">Welcome to Foundation</span>
+                    </div>
+
+                    <div class="title-bar-right">
+                        <button class="menu-icon" type="button" data-open="off_canvas_left2"></button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <hr>
+
+    <h3>Off-canvas Reveal on Larger Screen Example</h3>
+
+    <div class="off-canvas-wrapper">
+        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+            <div class="off-canvas position-left reveal-for-large" id="off_canvas_left3" data-off-canvas></div>
+            <div class="off-canvas-content" data-off-canvas-content>
+                Welcome to Foundation
+            </div>
+            <button type="button" class="button" data-toggle="off_canvas_left3">Click Here</button>
+        </div>
+    </div>
+
+    <hr>
+    <hr>
+    <h3>Modals</h3>
+
+    <h3>Reveal Basics Example</h3>
+    <p><a data-open="reveal_modal">Click here to open modal</a></p>
+
+    <div class="reveal" id="reveal_modal" data-reveal>
+        <h3>Foundation</h3>
+        <p>Foundation is a family of responsive front-end frameworks that make it easy to design beautiful responsive websites, apps and emails that look amazing on any device.</p>
+
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+          <span aria-hidden = "true">×</span>
+       </button>
+    </div>
+
+    <hr>
+
+    <h3>Reveal Modal in Modal Example</h3>
+    <p><a data-open="reveal_modal2">Click here to open modal</a></p>
+
+    <div class="reveal" id="reveal_modal2" data-reveal>
+        <h3>Foundation</h3>
+        <p>Foundation is a family of responsive front-end frameworks that make it easy to design beautiful responsive websites, apps and emails that look amazing on any device.</p>
+        <a class="button" data-toggle="reveal_modal1">Click here to open another modal!</a>
+
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+          <span aria-hidden = "true">×</span>
+       </button>
+    </div>
+
+    <div class="reveal" id="reveal_modal1" data-reveal>
+        <h3>This is another modal!!!</h3>
+        <p>Foundation is semantic, readable, flexible, and completely customizable.</p>
+
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+          <span aria-hidden = "true">×</span>
+       </button>
+    </div>
+
+    <hr>
+
+    <h3>Reveal Video in Modal Example</h3>
+    <p><a data-toggle="reveal_modal3">Click here to open modal</a></p>
+
+    <div class="reveal" id="reveal_modal3" data-reveal>
+        <h3>Video in Modal</h3>
+        <div class="flex-video widescreen vimeo">
+            <iframe src="./images/SampleVideo_1280x720_1mb.mp4" allowfullscreen></iframe>
+        </div>
+
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+          <span aria-hidden = "true">×</span>
+       </button>
+    </div>
+
+    <hr>
+
+    <h3>Reveal Tiny Size of Modal Example</h3>
+    <p><a data-toggle="reveal_modal4">Click here to open modal</a></p>
+
+    <div class="tiny reveal" id="reveal_modal4" data-reveal>
+        <h3>Tiny Modal</h3>
+        <p>Foundation is semantic, readable, flexible, and completely customizable.</p>
+
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+          <span aria-hidden = "true">×</span>
+       </button>
+    </div>
+
+    <hr>
+
+    <h3>Reveal Full Screen Modal Example</h3>
+    <p><a data-toggle="reveal_modal5">Click here to open modal</a></p>
+
+    <div class="full reveal" id="reveal_modal5" data-reveal>
+        <h3>This is Full Screen Modal</h3>
+        <p>Foundation is semantic, readable, flexible, and completely customizable.</p>
+
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+          <span aria-hidden = "true">×</span>
+       </button>
+    </div>
+
+    <hr>
+
+    <h3>Reveal No Overlay Example</h3>
+    <p><a data-toggle="reveal_modal6">Click here to open modal</a></p>
+
+    <div class="reveal" id="reveal_modal6" data-reveal data-overlay="false">
+        <h3>This is No Overlay Modal</h3>
+        <p>Foundation is semantic, readable, flexible, and completely customizable.</p>
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+          <span aria-hidden = "true">×</span>
+       </button>
+    </div>
+
+    <hr>
+
+    <h3>Reveal Animations Example</h3>
+    <p><a data-toggle="reveal_modal7">Click here to open modal</a></p>
+
+    <div class="reveal" id="reveal_modal7" data-reveal data-animation-in="spin-in" data-animation-out="spin-out">
+        <h3>This is Animations Modal</h3>
+        <p>Foundation is semantic, readable, flexible, and completely customizable.</p>
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+          <span aria-hidden = "true">×</span>
+       </button>
+    </div>
+
+    <hr>
+    <hr>
+
+    <h3>Tables</h3>
+
+    <h3>Basic Table Example</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Team</th>
+                <th>Player Name</th>
+                <th>Batsman/Bowler</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>India</td>
+                <td>Sachin Tendulkar</td>
+                <td>Batsman</td>
+            </tr>
+            <tr>
+                <td>South Africa</td>
+                <td>Shaun Pollock</td>
+                <td>Bowler</td>
+            </tr>
+            <tr>
+                <td>West Indies</td>
+                <td>Brian Lara</td>
+                <td>Batsman</td>
+            </tr>
+            <tr>
+                <td>Australia</td>
+                <td>Shane Watson</td>
+                <td>Bowler</td>
+            </tr>
+            <tr>
+                <td>Ross Taylor</td>
+                <td>New Zealand</td>
+                <td>Batsman</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h3>Hover Table Example</h3>
+    <table class="hover">
+        <thead>
+            <tr>
+                <th>Team</th>
+                <th>Player Name</th>
+                <th>Batsman/Bowler</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>India</td>
+                <td>Sachin Tendulkar</td>
+                <td>Batsman</td>
+            </tr>
+            <tr>
+                <td>South Africa</td>
+                <td>Shaun Pollock</td>
+                <td>Bowler</td>
+            </tr>
+            <tr>
+                <td>West Indies</td>
+                <td>Brian Lara</td>
+                <td>Batsman</td>
+            </tr>
+            <tr>
+                <td>Australia</td>
+                <td>Shane Watson</td>
+                <td>Bowler</td>
+            </tr>
+            <tr>
+                <td>Ross Taylor</td>
+                <td>New Zealand</td>
+                <td>Batsman</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h3>Stacked Table Example</h3>
+    <table class="stack">
+        <thead>
+            <tr>
+                <th>Team</th>
+                <th>Player Name</th>
+                <th>Batsman/Bowler</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>India</td>
+                <td>Sachin Tendulkar</td>
+                <td>Batsman</td>
+            </tr>
+            <tr>
+                <td>South Africa</td>
+                <td>Shaun Pollock</td>
+                <td>Bowler</td>
+            </tr>
+            <tr>
+                <td>West Indies</td>
+                <td>Brian Lara</td>
+                <td>Batsman</td>
+            </tr>
+            <tr>
+                <td>Australia</td>
+                <td>Shane Watson</td>
+                <td>Bowler</td>
+            </tr>
+            <tr>
+                <td>Ross Taylor</td>
+                <td>New Zealand</td>
+                <td>Batsman</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h3>Scroll Table Example</h3>
+
+    <table class="scroll">
+        <thead>
+            <tr>
+                <th>Team</th>
+                <th>Player One</th>
+                <th>Player Two</th>
+                <th>Player Three</th>
+                <th>Player Four</th>
+                <th>Player Five</th>
+                <th>Player Six</th>
+                <th>Player Seven</th>
+                <th>Player Eight</th>
+                <th>Player Nine</th>
+                <th>Player Ten</th>
+                <th>Player Eleven</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>India</td>
+                <td>Mahendra Singh Dhoni</td>
+                <td>Virat Kohli</td>
+                <td>Ajinkya Rahane</td>
+                <td>Shikhar Dhawan</td>
+                <td>Rohit Sharma</td>
+                <td>Suresh Raina</td>
+                <td>Ravindra Jadeja</td>
+                <td>Ravichandran Ashwin</td>
+                <td>Bhuvneshwar Kumar</td>
+                <td>Mohammed Shami</td>
+                <td>Umesh Yadav</td>
+            </tr>
+            <tr>
+                <td>Srilanka</td>
+                <td>Angelo Mathews</td>
+                <td>Thirimanne</td>
+                <td>Tillakaratne Dilshan</td>
+                <td>Mahela Jayawardene</td>
+                <td>Tharindu Kaushal</td>
+                <td>Kulasekara</td>
+                <td>Suranga Lakmal</td>
+                <td>Lasith Malinga</td>
+                <td>Kusal Perera</td>
+                <td>Thisara Perera</td>
+                <td>Sangakkara</td>
+            </tr>
+            <tr>
+                <td>New Zealand</td>
+                <td>Brendon McCullum</td>
+                <td>Corey Anderson</td>
+                <td>Trent Boult</td>
+                <td>Grant Elliott</td>
+                <td>Martin Guptill</td>
+                <td>Nathan McCullum</td>
+                <td>Kyle Mills</td>
+                <td>Luke Ronchi</td>
+                <td>Tim Southee</td>
+                <td>Ross Taylor</td>
+                <td>Dan Vettori</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+    <hr>
+
+    <h3>Tabs</h3>
+
+    <h3>Basic Tabs Example</h3>
+
+    <ul class="tabs" data-tabs id="tabs_example">
+        <li class="tabs-title is-active"><a href="#tab1">Player 1</a></li>
+        <li class="tabs-title"><a href="#tab2">Player 2</a></li>
+        <li class="tabs-title"><a href="#tab3">Player 3</a></li>
+        <li class="tabs-title"><a href="#tab4">Player 4</a></li>
+        <li class="tabs-title"><a href="#tab5">Player 5</a></li>
+    </ul>
+
+    <div class="tabs-content" data-tabs-content="tabs_example">
+        <div class="tabs-panel is-active" id="tab1">
+            <p>First Player</p>
+            <p>Sachin Tendulkar</p>
+        </div>
+
+        <div class="tabs-panel" id="tab2">
+            <p>Second Player</p>
+            <p>M S Dhoni</p>
+        </div>
+
+        <div class="tabs-panel" id="tab3">
+            <p>Third Player</p>
+            <p>Shane Warne</p>
+        </div>
+
+        <div class="tabs-panel" id="tab4">
+            <p>Fourth Player</p>
+            <p>Shaun Pollock</p>
+        </div>
+
+        <div class="tabs-panel" id="tab5">
+            <p>Five Player</p>
+            <p>Adam Gilchrist</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <h3>Vertical Tabs Example</h3>
+
+    <div class="row collapse">
+        <div class="medium-3 columns">
+            <ul class="tabs vertical" data-tabs id="tabs_example">
+                <li class="tabs-title is-active"><a href="#tab1">Player 1</a></li>
+                <li class="tabs-title"><a href="#tab2">Player 2</a></li>
+                <li class="tabs-title"><a href="#tab3">Player 3</a></li>
+                <li class="tabs-title"><a href="#tab4">Player 4</a></li>
+                <li class="tabs-title"><a href="#tab5">Player 5</a></li>
+            </ul>
+        </div>
+
+        <div class="medium-9 columns">
+            <div class="tabs-content vertical" data-tabs-content="tabs_example">
+                <div class="tabs-panel is-active" id="tab1">
+                    <p>First Player</p>
+                    <p>Sachin Tendulkar</p>
+                </div>
+
+                <div class="tabs-panel" id="tab2">
+                    <p>Second Player</p>
+                    <p>M S Dhoni</p>
+                </div>
+
+                <div class="tabs-panel" id="tab3">
+                    <p>Third Player</p>
+                    <p>Shane Warne</p>
+                </div>
+
+                <div class="tabs-panel" id="tab4">
+                    <p>Fourth Player</p>
+                    <p>Shaun Pollock</p>
+                </div>
+
+                <div class="tabs-panel" id="tab5">
+                    <p>Five Player</p>
+                    <p>Adam Gilchrist</p>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+
+    <hr>
+    <hr>
+
+    <h3>Media</h3>
+
+    <div class="flex-video">
+        <iframe width="420" height="315" src="./images/SampleVideo_1280x720_1mb.mp4" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <hr>
+
+    <div class="flex-video widescreen">
+        <iframe width="420" height="315" src="./images/SampleVideo_1280x720_1mb.mp4" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <hr>
+
+    <h3>Labels</h3>
+
+    <span class="label">Default</span>
+    <p aria-describedby="email">Re: re: A Christmas gift for you!</p>
+    <span class="label" id="email">Maximum Priority</span>
+
+    <div>
+        <span class="warning label">Warning</span>
+        <span class="success label">Success</span>
+        <span class="alert label">Alert</span>
+        <span class="secondary label">Secondary</span>
+    </div>
+    <br>
+
+    <div>
+        <span class="success label"><i class = "fi-star"></i> Star Label</span>
+        <span class="alert label"><i class = "fi-lock"></i> Lock Label</span>
+        <span class="secondary label"><i class = "fi-share"></i> Share Label</span>
+    </div>
+
+    <hr>
+
+    <h3>Progress Bar</h3>
+    <div class="progress" role="progressbar" tabindex="0" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-meter"></div>
+    </div>
+
+    <div class="progress" role="progressbar" tabindex="0" aria-valuenow="80" aria-valuemin="0" aria-valuetext="80 percent" aria-valuemax="100">
+        <div class="progress-meter" style="width: 80%"></div>
+    </div>
+
+    <hr>
+
+    <h3>Progress Bar</h3>
+    <div class="warning progress" role="progressbar" tabindex="0" aria-valuenow="25" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
+        <div class="progress-meter" style="width: 25%"></div>
+    </div>
+
+    <div class="alert progress">
+        <div class="progress-meter" style="width: 50%"></div>
+    </div>
+
+    <div class="success progress">
+        <div class="progress-meter" style="width: 75%"></div>
+    </div>
+
+    <hr>
+
+    <h3>Progress Bar</h3>
+
+    <div class="progress" role="progressbar" tabindex="0" aria-valuenow="50" aria-valuemin="0" aria-valuetext="50 percent" aria-valuemax="100">
+        <span class="progress-meter" style="width: 50%">
+          <p class = "progress-meter-text">50%</p>
+        </span>
+    </div>
+
+    <hr>
+
+    <p>This an example for <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="Below">Tooltip</span> which displays below.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+    <p>This an example for <span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex=2 title="Top">Tooltip</span> which displays on top.</p>
+
+    <p>This an example for <span data-tooltip aria-haspopup="true" class="has-tip right" data-disable-hover="false" tabindex="3" title="Right">Tooltip</span> which displays right. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+        velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. This an example for <span data-tooltip aria-haspopup="true" class="has-tip left" data-disable-hover="false" tabindex="4" title="Left">Tooltip</span>            which displays left.</p>
+
+    <hr>
+
+    <h3>Example of Equalizer</h3>
+
+    <div class="row" data-equalizer>
+        <div class="medium-4 columns">
+            <div class="callout" data-equalizer-watch style="background-color:#C0B0F0;">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                    specimen book.</p>
+            </div>
+        </div>
+
+        <div class="medium-4 columns">
+            <div class="callout" data-equalizer-watch style="background-color:#8BD6EE;">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+        </div>
+
+        <div class="medium-4 columns">
+            <div class="callout" data-equalizer-watch style="background-color:#C0B0F0;">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row" data-equalizer="first">
+        <div class="medium-4 columns" data-equalizer-watch="first">
+            <div class="callout" data-equalizer="second">
+
+                <h3>Nested panel</h3>
+                <div class="callout" data-equalizer-watch="second" style="background-color:#C0B0F0;">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+                </div>
+
+                <div class="callout" data-equalizer-watch="second" style="background-color:#8BD6EE;">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+                </div>
+
+                <div class="callout" data-equalizer-watch="second" style="background-color:#C0B0F0;">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="medium-4 columns">
+            <div class="callout panel" data-equalizer-watch="first" style="background-color:#808000;">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+            </div>
+        </div>
+
+        <div class="medium-4 columns">
+            <div class="callout" data-equalizer-watch="first" style="background-color:#7B68EE;">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <hr>
+
+
+    
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+          <h3>Foundation Basics</h3>
+        </div>
+      </div>
+
+      <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+          <div class="callout">
+            <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
+            <p>Once you've exhausted the fun in this document, you should check out:</p>
+            <div class="grid-x grid-padding-x">
+              <div class="large-4 medium-4 cell">
+                <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
+              </div>
+              <div class="large-4 medium-4 cell">
+                <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
+              </div>
+              <div class="large-4 medium-4 cell">
+                <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
+              </div>
+            </div>
+            <div class="grid-x grid-padding-x">
+              <div class="large-4 medium-4 cell">
+                <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
+              </div>
+              <div class="large-4 medium-4 medium-push-4 cell">
+                <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-x grid-padding-x">
+        <div class="large-8 medium-8 cell">
+          <h5>Here&rsquo;s your basic grid:</h5>
+
+          <div class="grid-x grid-padding-x">
+            <div class="large-12 cell">
+              <div class="primary callout">
+                <p><strong>This is a twelve cell section in a grid-x.</strong> Each of these includes a div.callout element so you can see where the cell are - it's not required at all for the grid.</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-x grid-padding-x">
+            <div class="large-6 medium-6 cell">
+              <div class="primary callout">
+                <p>Six cell</p>
+              </div>
+            </div>
+            <div class="large-6 medium-6 cell">
+              <div class="primary callout">
+                <p>Six cell</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-x grid-padding-x">
+            <div class="large-4 medium-4 small-4 cell">
+              <div class="primary callout">
+                <p>Four cell</p>
+              </div>
+            </div>
+            <div class="large-4 medium-4 small-4 cell">
+              <div class="primary callout">
+                <p>Four cell</p>
+              </div>
+            </div>
+            <div class="large-4 medium-4 small-4 cell">
+              <div class="primary callout">
+                <p>Four cell</p>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+
+          <h5>Example Form:</h5>
+          <form>
+            <div class="grid-x grid-padding-x">
+              <div class="large-12 cell">
+                <label>Input Label</label>
+                <input type="text" placeholder="large-12.cell" />
+              </div>
+            </div>
+            <div class="grid-x grid-padding-x">
+              <div class="large-4 medium-4 cell">
+                <label>Input Label</label>
+                <input type="text" placeholder="large-4.cell" />
+              </div>
+              <div class="large-4 medium-4 cell">
+                <label>Input Label</label>
+                <input type="text" placeholder="large-4.cell" />
+              </div>
+              <div class="large-4 medium-4 cell">
+                <div class="grid-x">
+                  <label>Input Label</label>
+                  <div class="input-group">
+                    <input type="text" placeholder="small-9.cell" class="input-group-field" />
+                    <span class="input-group-label">.com</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-x grid-padding-x">
+              <div class="large-12 cell">
+                <label>Select Box</label>
+                <select>
+                  <option value="husker">Husker</option>
+                  <option value="starbuck">Starbuck</option>
+                  <option value="hotdog">Hot Dog</option>
+                  <option value="apollo">Apollo</option>
+                </select>
+              </div>
+            </div>
+            <div class="grid-x grid-padding-x">
+              <div class="large-6 medium-6 cell">
+                <label>Choose Your Favorite</label>
+                <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
+                <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
+              </div>
+              <div class="large-6 medium-6 cell">
+                <label>Check these out</label>
+                <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+                <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+              </div>
+            </div>
+            <div class="grid-x grid-padding-x">
+              <div class="large-12 cell">
+                <label>Textarea Label</label>
+                <textarea placeholder="small-12.cell"></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="large-4 medium-4 cell">
+          <h5>Button Examples:</h5>
+          <p><a href="#" class="button">Simple Button</a><br/>
+          <a href="#" class="success button">Success Btn</a><br/>
+          <a href="#" class="alert button">Alert Btn</a><br/>
+          <a href="#" class="secondary button">Secondary Btn</a></p>
+          <div class="callout">
+            <h5>Callout Example</h5>
+            <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
+            <a href="http://foundation.zurb.com/sites/docs/" class="small button">Go to Foundation Docs</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation-essential/6.2.2/js/vendor/what-input.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/foundation.min.js"></script> -->
+
+        <!--
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/plugins/foundation.orbit.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/what-input/dist/what-input.js"></script>
+    
+    <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
+    -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/foundation.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+    <script src="js/app.js"></script>
+
+    <!--
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/plugins/foundation.accordion.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/plugins/foundation.accordionMenu.js"></script>
+    -->
+    <script>
+        $(document).ready(function() {
+            $(document).foundation();
+        })
+    </script>
+
+</body>
+
+</html>
